@@ -83,7 +83,7 @@ jobs:
           git commit -m "🔄 Sync https://github.com/${{ github.repository }}"
           git push --set-upstream origin $BRANCH --force
           if [ -z "$(gh pr list -S "head:$BRANCH")" ]; then
-            gh pr create --base master --title "🔄 Sync ${{ github.repository }}" --body "${{ steps.template.outputs.result }}" --label sync
+            gh pr create --base master --title "🔄 Sync ${{ github.repository }}" --body "${{ steps.template.outputs.result }}"
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
