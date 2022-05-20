@@ -63,7 +63,6 @@ jobs:
       - run: echo ${{ steps.changes.outputs.changes }}
 
       - name: Render template
-        if: steps.changes.outputs.changes == '1'
         id: template
         uses: chuhlomin/render-template@v1.4
         with:
@@ -77,12 +76,14 @@ jobs:
         if: steps.changes.outputs.changes == '1'
         working-directory: ${{ matrix.path }}
         run: |
-          BRANCH="sync-${{ github.run_id }}"
+          BRANCH="sync"
           git config --global user.name 'sync-bot'
           git config --global user.email 'sync-bot@users.noreply.github.com'
           git checkout -b $BRANCH
           git commit -m "🔄 Sync https://github.com/${{ github.repository }}"
-          git push --set-upstream origin $BRANCH
-          gh pr create --base master --title "🔄 Sync ${{ github.repository }}" --body "${{ steps.template.outputs.result }}" --label sync
+          git push --set-upstream origin $BRANCH --force
+          if [ -z "$(gh pr list -S "head:$BRANCH")" ]; then
+            gh pr create --base master --title "🔄 Sync ${{ github.repository }}" --body "${{ steps.template.outputs.result }}" --label sync
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
