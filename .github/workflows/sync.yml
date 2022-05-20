@@ -9,6 +9,9 @@ jobs:
   sync:
     runs-on: ubuntu-latest
 
+    outputs:
+      changes: ${{ steps.changes.outputs.changes }}
+
     strategy:
       matrix:
         repo: [
@@ -46,13 +49,17 @@ jobs:
       # This step will evaluate the repo status and report the change
       - name: Check if there are changes
         id: changes
-        uses: tj-actions/verify-changed-files@v9
-        with:
-          files: |
-            ${{ env.LANG_PATH }}
+        working-directory: ${{ matrix.path }}
+        run: |
+          if git status | grep -q "Changes to be committed"
+          then
+            echo "::set-output name=changes::1"  
+          else
+            echo "::set-output name=changes::0"
+          fi
 
       - name: Render template
-        if: steps.changes.outputs.files_changed == 'true'
+        if: steps.changes.outputs.changes == '1'
         id: template
         uses: chuhlomin/render-template@v1.4
         with:
@@ -63,9 +70,9 @@ jobs:
             REPO_URL: ${{ github.repositoryUrl }}
 
       - name: Create pull request
-        if: steps.changes.outputs.files_changed == 'true'
+        if: steps.changes.outputs.changes == '1'
+        working-directory: ${{ matrix.path }}
         run: |
-          cd ${{ matrix.path }}
           git config --global user.name 'sync-bot'
           git config --global user.email 'sync-bot@users.noreply.github.com'
           git checkout -b sync-${{ github.run_id }}
