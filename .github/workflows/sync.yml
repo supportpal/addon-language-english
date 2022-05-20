@@ -1,0 +1,74 @@
+name: Sync Branches
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        repo: [
+          'supportpal/addon-language-spanish'
+        ]
+        path: ['614ed54b-7b88-4936-a3a2-e1a84669010a']
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Checkout repository we want to synchronise
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ matrix.repo }}
+          path: ${{ matrix.path }}
+          ref: master
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.0
+          tools: composer:v2, supportpal/language-tools
+
+      - name: Set environment
+        run: |
+          echo "LANG_PATH=$(find ${{ matrix.path }}/Lang -mindepth 1 -maxdepth 1 -type d -print -quit)" >> $GITHUB_ENV
+          echo "LANG_NAME=$(basename $LANG_PATH)" >> $GITHUB_ENV 
+
+      - name: Sync translation files
+        run: |
+          language-tools sync Lang/en ${{ env.LANG_PATH }}
+
+      # This step will evaluate the repo status and report the change
+      - name: Check if there are changes
+        id: changes
+        uses: UnicornGlobal/has-changes-action@v1.0.11
+
+      - name: Render template
+        if: steps.changes.outputs.changed == 1
+        id: template
+        uses: chuhlomin/render-template@v1.4
+        with:
+          template: .github/sync-template.md
+          vars: |
+            GITHUB_RUN_ID: ${{ github.run_id }}
+            REPO_NAME: ${{ github.repository }}
+            REPO_URL: ${{ github.repositoryUrl }}
+
+      - name: Create pull request
+        if: steps.changes.outputs.changed == 1
+        run: |
+          cd ${{ matrix.path }}
+          git config --global user.name 'sync-bot'
+          git config --global user.email 'sync-bot@users.noreply.github.com'
+          git checkout -b sync-${{ github.run_id }}
+          git add Lang/${{ env.LANG_NAME }}
+          git commit -m "🔄 Sync https://github.com/${{ github.repository }}"
+          git push
+          gh pr create --base master --title "🔄 Sync ${{ github.repository }}" --body ${{ steps.template.outputs.result }} --label sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
