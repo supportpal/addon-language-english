@@ -77,11 +77,12 @@ jobs:
         if: steps.changes.outputs.changes == '1'
         working-directory: ${{ matrix.path }}
         run: |
+          BRANCH="$(sync-${{ github.run_id }})"
           git config --global user.name 'sync-bot'
           git config --global user.email 'sync-bot@users.noreply.github.com'
-          git checkout -b sync-${{ github.run_id }}
+          git checkout -b $BRANCH
           git commit -m "🔄 Sync https://github.com/${{ github.repository }}"
-          git push
+          git push --set-upstream origin $BRANCH
           gh pr create --base master --title "🔄 Sync ${{ github.repository }}" --body ${{ steps.template.outputs.result }} --label sync
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
