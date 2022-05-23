@@ -33,7 +33,7 @@ jobs:
 
       - name: Build Release
         run: |
-          git archive --format=tar --prefix="{{ env.ADDON_NAME }}/" HEAD -o archive.tar
+          git archive --format=tar --prefix="${{ env.ADDON_NAME }}/" HEAD -o archive.tar
           tar -xf archive.tar
           rm -rf ${{ env.ADDON_NAME }}/.github/
           zip -r ${{ env.ZIP_FILENAME }} ${{ env.ADDON_NAME }}
