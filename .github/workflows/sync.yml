@@ -42,8 +42,9 @@ jobs:
           echo "LANG_PATH=$(find ${{ matrix.path }}/Lang -mindepth 1 -maxdepth 1 -type d -print -quit)" >> $GITHUB_ENV
           echo "LANG_NAME=$(basename $LANG_PATH)" >> $GITHUB_ENV 
 
-      - name: Sync translation files
+      - name: Sync files
         run: |
+          cp -R .github/ ${{ matrix.path }}/
           language-tools sync Lang/en ${{ env.LANG_PATH }}
 
       # This step will evaluate the repo status and report the change
