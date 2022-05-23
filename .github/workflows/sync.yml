@@ -53,7 +53,7 @@ jobs:
         id: changes
         working-directory: ${{ matrix.path }}
         run: |
-          git add .github/ Lang/
+          git add Lang/ .github/dependabot.yml .github/workflows/release.yml .github/workflows/test.yml
           git status
           if git status | grep -q "Changes to be committed"
           then
