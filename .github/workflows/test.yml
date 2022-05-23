@@ -50,4 +50,4 @@ jobs:
       - name: Code Quality
         if: ${{ env.LANG_NAME != 'en' }}
         run: |
-          language-tools compare addon-language-english/Lang/en/ Lang/{{ env.LANG_NAME }}
+          language-tools compare addon-language-english/Lang/en/ Lang/${{ env.LANG_NAME }}
