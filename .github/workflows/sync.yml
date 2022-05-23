@@ -52,7 +52,7 @@ jobs:
         id: changes
         working-directory: ${{ matrix.path }}
         run: |
-          git add Lang/${{ env.LANG_NAME }}
+          git add .github/ Lang/${{ env.LANG_NAME }}
           git status
           if git status | grep -q "Changes to be committed"
           then
