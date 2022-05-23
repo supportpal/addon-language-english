@@ -60,8 +60,6 @@ jobs:
             echo "::set-output name=changes::0"
           fi
 
-      - run: echo ${{ steps.changes.outputs.changes }}
-
       - name: Render template
         id: template
         uses: chuhlomin/render-template@v1.4
