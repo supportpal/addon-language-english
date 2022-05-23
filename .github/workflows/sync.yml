@@ -20,7 +20,8 @@ jobs:
           'supportpal/addon-language-german',
           'supportpal/addon-language-portuguese',
           'supportpal/addon-language-french',
-          'supportpal/addon-language-persian'
+          'supportpal/addon-language-persian',
+          'supportpal/addon-language-turkish'
         ]
         path: ['614ed54b-7b88-4936-a3a2-e1a84669010a']
 
