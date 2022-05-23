@@ -1,3 +1,12 @@
+#####################################################################################
+#                                   WARNING                                         #
+#####################################################################################
+#                                                                                   #
+# This file is synchronised across all supportpal/addon-language-* repositories.    #
+# Be careful not to hardcode any paths, and only update it in the                   #
+# supportpal/addon-language-english repository!                                     #
+#                                                                                   #
+#####################################################################################
 name: test
 
 on:
