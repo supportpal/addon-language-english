@@ -15,7 +15,8 @@ jobs:
     strategy:
       matrix:
         repo: [
-          'supportpal/addon-language-spanish'
+          'supportpal/addon-language-spanish',
+          'supportpal/addon-language-dutch',
         ]
         path: ['614ed54b-7b88-4936-a3a2-e1a84669010a']
 
