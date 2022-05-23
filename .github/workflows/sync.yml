@@ -17,6 +17,7 @@ jobs:
         repo: [
           'supportpal/addon-language-spanish',
           'supportpal/addon-language-dutch',
+          'supportpal/addon-language-german'
         ]
         path: ['614ed54b-7b88-4936-a3a2-e1a84669010a']
 
