@@ -55,7 +55,7 @@ jobs:
         id: changes
         working-directory: ${{ matrix.path }}
         run: |
-          git add -A Lang/{{ env.LANG_NAME }} .github/dependabot.yml .github/workflows/release.yml .github/workflows/test.yml
+          git add -A Lang/${{ env.LANG_NAME }} .github/dependabot.yml .github/workflows/release.yml .github/workflows/test.yml
           git status
           if git status | grep -q "Changes to be committed"
           then
