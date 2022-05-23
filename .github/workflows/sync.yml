@@ -40,7 +40,6 @@ jobs:
       - name: Set environment
         run: |
           echo "LANG_PATH=$(find ${{ matrix.path }}/Lang -mindepth 1 -maxdepth 1 -type d -print -quit)" >> $GITHUB_ENV
-          echo "LANG_NAME=$(basename $LANG_PATH)" >> $GITHUB_ENV 
 
       - name: Sync files
         run: |
@@ -54,7 +53,7 @@ jobs:
         id: changes
         working-directory: ${{ matrix.path }}
         run: |
-          git add .github/ Lang/${{ env.LANG_NAME }}
+          git add .github/ Lang/
           git status
           if git status | grep -q "Changes to be committed"
           then
