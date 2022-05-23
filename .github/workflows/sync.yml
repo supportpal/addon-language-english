@@ -45,9 +45,10 @@ jobs:
 
       - name: Sync files
         run: |
-          cp .github/dependabot.yml ${{ matrix.path }}/
-          cp .github/workflows/release.yml ${{ matrix.path }}/
-          cp .github/workflows/test.yml ${{ matrix.path }}/
+          mkdir -p ${{ matrix.path }}/.github/workflows/
+          cp .github/dependabot.yml ${{ matrix.path }}/.github/
+          cp .github/workflows/release.yml ${{ matrix.path }}/.github/workflows/
+          cp .github/workflows/test.yml ${{ matrix.path }}/.github/workflows/
           language-tools sync Lang/en ${{ env.LANG_PATH }}
 
       # This step will evaluate the repo status and report the change
