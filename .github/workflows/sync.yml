@@ -39,7 +39,7 @@ jobs:
 
       - name: Set environment
         run: |
-          LANG_PATH=$(find ${{ matrix.path }}/Lang -mindepth 1 -maxdepth 1 -type d -print -quit)"
+          LANG_PATH="$(find ${{ matrix.path }}/Lang -mindepth 1 -maxdepth 1 -type d -print -quit)"
           echo "LANG_PATH=$(echo $LANG_PATH)" >> $GITHUB_ENV
           echo "LANG_NAME=$(basename $LANG_PATH)" >> $GITHUB_ENV 
 
