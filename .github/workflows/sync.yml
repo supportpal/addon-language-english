@@ -89,8 +89,8 @@ jobs:
         working-directory: ${{ matrix.path }}
         run: |
           BRANCH="sync"
-          git config --global user.name 'sync-bot'
-          git config --global user.email 'sync-bot@users.noreply.github.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions@users.noreply.github.com'
           git checkout -b $BRANCH
           git commit -m "🔄 Sync https://github.com/${{ github.repository }}"
           git push --set-upstream origin $BRANCH --force
