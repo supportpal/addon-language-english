@@ -16,16 +16,17 @@ jobs:
     strategy:
       matrix:
         repo: [
-          'supportpal/addon-language-spanish',
+          'supportpal/addon-language-danish',
           'supportpal/addon-language-dutch',
-          'supportpal/addon-language-german',
-          'supportpal/addon-language-portuguese',
           'supportpal/addon-language-french',
+          'supportpal/addon-language-german',
           'supportpal/addon-language-persian',
-          'supportpal/addon-language-turkish',
-          'supportpal/addon-language-swedish',
+          'supportpal/addon-language-portuguese',
+          'supportpal/addon-language-portuguese-brazilian',
           'supportpal/addon-language-russian',
-          'supportpal/addon-language-portuguese-brazilian'
+          'supportpal/addon-language-spanish',
+          'supportpal/addon-language-swedish',
+          'supportpal/addon-language-turkish'
         ]
         path: ['614ed54b-7b88-4936-a3a2-e1a84669010a']
 
