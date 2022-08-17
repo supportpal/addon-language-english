@@ -6,7 +6,9 @@ SupportPal is a [self-hosted, on-premise help desk software](https://www.support
 
 ## Other Language Packs
 
-We have a number of [user-contributed language packs](https://github.com/supportpal?q=addon-language-&type=all&language=&sort=) available at Github.
+We have a number of [user-contributed language packs](https://marketplace.supportpal.com/category/languages) available at our marketplace. These can be [installed in your SupportPal installation](https://docs.supportpal.com/current/Language+Packs+Available+Language+Packs#AvailableLanguagePacks) in just a few clicks.
+
+The underlying code for these language packs can be found at [GitHub](https://github.com/orgs/supportpal/repositories?q=addon-language).
 
 ## Related Repositories
 
