@@ -203,4 +203,10 @@ return array(
      */
     "selfservice_article_neutral"       => "Neutrally rated article :rel.",
 
+    /*
+     * 4.1.0
+     */
+    "user_merged"                       => "User :old_value merged into user :rel.",
+    "user_organisation_merged"          => "User organisation :old_value merged into user organisation :rel.",
+
 );

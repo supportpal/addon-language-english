@@ -415,4 +415,9 @@ return array(
     "more_information"          => "More Information",
     "details"                   => "Details",
 
+    /*
+     * 4.1.0
+     */
+    "merge"                     => "Merge",
+
 );

@@ -244,7 +244,6 @@ return array(
     "ticket_notes_top"          => "At top only",
     "ticket_notes_messages"     => "In messages only",
 
-    "captcha_desc"              => "When the captcha should be shown to users opening new tickets.",
     "unregistered_only"         => "Unregistered users only",
 
     "allow_unauth_users"        => "Allow Unauthenticated Users",
@@ -276,7 +275,6 @@ return array(
     "add_tag"                   => "Add tag",
 
     "unlock"                    => "Unlock",
-    "merge"                     => "Merge",
     "merged"                    => "Merged",
     "unmerge"                   => "Unmerge",
     "close_and_lock"            => "Close & Lock",
@@ -454,7 +452,6 @@ return array(
     "select_a_department_email" => "Select a department email...",
     "record_public_desc"        => "Toggle to only let the :record be accessible by yourself.",
     "record_group_desc"         => "If you wish to make the :record visible to only certain operator groups. Leave blank to make visible to all operators.",
-    "ticket_format_desc"        => "Can contain alphanumeric characters and special characters <code>-_.+!*,</code><br />The following variables may also be used: %S for a sequential number | %N for a random number | %L for a random letter<br />Use {number} to repeat <strong>only</strong> after %N or %L, e.g. %N{4} equates to 4 random numbers, %L{3} equates to 3 random letters<br />The following <a href='http://php.net/manual/en/function.date.php' target='_blank'>PHP Date</a> Parameters prefixed with % Y,y,m,d,j,g,G,h,H,i,s",
 
     /*
      * 2.4.0
@@ -544,5 +541,16 @@ return array(
      */
     "on_behalf_of"              => "Created on behalf of",
     "reply_canned_be_posted"    => "It is not currently possible to reply to this ticket; the channel or channel account may be disabled.",
+
+    /*
+     * 4.1.0
+     */
+    "ticket_format_desc"        => "Can contain alphanumeric characters and special characters <code>-_.+!*,</code><br />The following variables may also be used: %S for a sequential number | %N for a random number | %L for a random letter<br />Use {number} to repeat <strong>only</strong> after %N or %L, e.g. %N{4} equates to 4 random numbers, %L{3} equates to 3 random letters<br />The following <a href='http://php.net/manual/en/function.date.php' target='_blank'>PHP Date</a> Parameters prefixed with % Y,y,m,d,z,j,g,G,h,H,i,s",
+    "append_ip_address_api_desc" => "Append the user's IP address to the end of their ticket messages (requires user_ip_address data to be provided).",
+    "check_spam"                => "Check Spam Rules",
+    "check_spam_api_desc"       => "Block messages which match spam rules.",
+    "enable_throttling"         => "Enable Throttling",
+    "enable_throttling_api_desc" => "Limit the number of messages user's can post within a time frame. See <a href='https://docs.supportpal.com/current/App+Configuration#Throttling' target='_blank'>Throttling configuration</a> for more details on how to adjust the limits.",
+    "captcha_desc"              => "When the captcha should be shown to users opening new tickets or using the track ticket feature.",
 
 );
