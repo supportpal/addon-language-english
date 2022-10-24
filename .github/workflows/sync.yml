@@ -22,7 +22,7 @@ jobs:
           'supportpal/addon-language-german',
           'supportpal/addon-language-persian',
           'supportpal/addon-language-portuguese',
-          'supportpal/addon-language-portuguese-brazilian',
+          'supportpal/addon-language-portuguese-brazil',
           'supportpal/addon-language-russian',
           'supportpal/addon-language-spanish',
           'supportpal/addon-language-swedish',
