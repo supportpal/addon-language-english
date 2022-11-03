@@ -77,7 +77,6 @@ return array(
     // User
     "usercustomfield"   => "Manage User Custom Fields",
     "organisationcustomfield" => "Manage Organisation Custom Fields",
-    "operatorsignature" => "Manage Operator Signatures",
 
     /*
      * 2.1.1
@@ -124,5 +123,10 @@ return array(
      */
     "addon"             => "View and Manage Add-ons",
     "system_health"     => "View System Health",
+
+    /*
+     * 4.2.0
+     */
+    "operatorreplytemplate" => "Manage Operator Reply Templates",
 
 );

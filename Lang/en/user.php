@@ -204,11 +204,6 @@ return array(
     "op_settings_individual_dept"   => "Assigned to individually:",
     "op_settings_individual_dept_desc" => "These departments are in addition to any departments the operator is assigned to via their groups above.",
     "also_registered_other_brand"   => "This user is also registered in the :brands brand.|This user is also registered in the :brands brands.",
-    "signature"                     => "Signature|Signatures",
-    "signature_desc"                => "Create personal ticket signatures, with the option to customise based on the brand/department of the ticket. The default signature is used when a signature for a specific department and/or brand cannot be found.",
-    "operator_signature"            => "Operator Signature|Operator Signatures",
-    "ticket_signature_desc"         => "Set the operator's default ticket signature.",
-    "operator_signature_desc"       => "Further signatures for specific departments and/or brands can be set in the <a href=':route' target='_blank'>Operator Signatures</a> section.",
     "view_organisation"             => "View Organisation",
     "new_owner"                     => "New Owner",
     "operator_role"                 => "Operator Role|Operator Roles",
@@ -357,5 +352,14 @@ return array(
     "merge_organisations"           => "Merge Organisations",
     "merge_organisation_into"       => "Select organisation to merge into",
     "search_for_organisation"       => "Search for organisation...",
+
+    /*
+     * 4.2.0
+     */
+    "reply_template"                => "Reply Template|Reply Templates",
+    "reply_template_desc"           => "Set a personal reply template that prefills the textarea when starting to compose a reply, with the option to customise based on the brand/department of the ticket. The default reply template is used when a reply template for a specific department and/or brand cannot be found.",
+    "operator_reply_template"       => "Operator Reply Template|Operator Reply Templates",
+    "ticket_reply_template_desc"    => "Set the operator's default ticket reply template.",
+    "operator_reply_template_desc"  => "Further reply templates for specific departments and/or brands can be set in the <a href=':route' target='_blank'>Operator Reply Templates</a> section.",
 
 );

@@ -176,7 +176,7 @@ return array(
     /*
      * 3.5.0
      */
-    'phone'                     => "The supplied phone number is invalid.",
+    "phone"                     => "The supplied phone number is invalid.",
 
     /*
     |--------------------------------------------------------------------------

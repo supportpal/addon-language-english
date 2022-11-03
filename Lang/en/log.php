@@ -114,7 +114,6 @@ return array(
      */
     "ticket_brand_disabled_reply"       => "Reply could not be added due to ticket belonging to a disabled brand #:rel.",
     "personal_signatures_updated"       => "Updated personal signatures.",
-    "operator_signatures_updated"       => "Updated :rel's signatures.",
     "check_email_failed"                => "Error: Failed to download email from account :old_value: ':rel'.",
     "ticket_added_cc"                   => "Email(s) :new_value added to CC address list for ticket #:rel.",
     "ticket_removed_cc"                 => "Email(s) :old_value removed from CC address list for ticket #:rel.",
@@ -208,5 +207,10 @@ return array(
      */
     "user_merged"                       => "User :old_value merged into user :rel.",
     "user_organisation_merged"          => "User organisation :old_value merged into user organisation :rel.",
+
+    /*
+     * 4.2.0
+     */
+    "operator_reply_templates_updated"  => "Updated :rel's reply templates.",
 
 );
