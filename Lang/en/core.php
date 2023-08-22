@@ -619,4 +619,16 @@ return array(
     "shortcut_collapse_all"     => "Collapse all messages",
     "shortcut_print_ticket"     => "Print ticket details and messages",
 
+    /*
+     * 4.3.0
+     */
+    "db_connection_error"       => "Database connection error, please check :path",
+
+    /*
+     * 5.0.0
+     */
+    "favicon_dark_mode"         => "Dark Mode Favicon",
+    "favicon_dark_mode_desc"    => "If your favicon was designed to only work on a light background, set a different favicon for dark mode. This will only be used if your browser and/or operating system is running in dark mode.",
+    "template_mode_system_desc" => "Choosing system will synchronise the template mode to light or dark mode depending on your operating system theme settings.",
+
 );

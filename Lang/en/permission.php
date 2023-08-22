@@ -129,4 +129,9 @@ return array(
      */
     "operatorreplytemplate" => "Manage Operator Reply Templates",
 
+    /*
+     * 5.0.0
+     */
+    "private_messaging" => "View Private Messages",
+
 );

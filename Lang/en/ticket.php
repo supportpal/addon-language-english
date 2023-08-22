@@ -40,8 +40,6 @@ return array(
     "recent_tickets"            => "Recent Tickets",
     "last_message_text"         => "Last Message Text",
 
-    "set_due_time"              => "Set a due time",
-
     "settings"                  => "Ticket Settings",
 
     "priority"                  => "Priority|Priorities",
@@ -160,7 +158,6 @@ return array(
     "allowed_files"             => "Allowed Attachment File Types",
 
     // Drafts
-    "also_viewing"              => "<strong>:name</strong> also viewing ticket.",
     "draft_saved"               => "Draft saved at :time",
     "save_draft"                => "Save Draft",
     "discard_draft"             => "Discard Draft",
@@ -188,10 +185,6 @@ return array(
     "sla_plan"                  => "SLA Plan|SLA Plans",
     "specific_schedule"         => "Specific Schedules",
     "calendar_hours_24"         => "Calendar Hours (24 Hours)",
-    "resolution_time"           => "Resolution Times",
-    "resolution_time_desc"      => "Set times that a ticket must be responded to by and resolved by per priority. The time will be counted only during business hours based on the schedule(s) chosen, decimal values can be used.",
-    "reply_within"              => "Reply within",
-    "resolve_within"            => "Resolve within",
     "plan"                      => "Plan",
     "sla_condition"             => "SLA Conditions",
     "sla_condition_desc"        => "Define the ticket conditions for which new tickets are checked to see if they fall under this plan. If a new ticket fits multiple SLA plans, it will be selected on plan priority, which can be modified by going to the list of plans and reordering.",
@@ -258,7 +251,6 @@ return array(
     // Email Channel Settings
     "default_priority"          => "Default Priority",
     "default_priority_desc"     => "The default priority set on all incoming tickets via this channel.",
-    "verbose_email_log"         => "Verbose Email Log",
 
     "last_reply"                => "Last Reply",
     "opened_at"                 => "Opened At",
@@ -399,7 +391,6 @@ return array(
     "email_user_frontend"       => "Email Users on Tickets Opened at Frontend",
     "email_user_frontend_desc"  => "Select whether users should be notified by email when they open a ticket themselves on the frontend.",
     "department_template_disabled" => "The relevant department email template is disabled, so this email cannot be sent.",
-    "verbose_email_log_desc"    => "If email collection should be logged on file, recommended to keep disabled unless instructed by support for debugging. Five days worth of logs are stored, older log files will be purged automatically by the system.",
 
     /*
      * 2.2.0
@@ -419,7 +410,6 @@ return array(
      */
     "registered_users_desc"     => "Toggle to only show the department to logged in users and only accept emails from users actively registered in the help desk. If enabled, a bounce back email will be sent to unregistered users who email this department, to change or disable the email please see the 'Registered Users Only' template option below.",
     "form_fields_desc"          => "If you'd like to collect additional information when the user provides their feedback, you may set up custom fields to show on the form here. The field type will be locked once the form has been completed by a user.",
-    "feedback_ratings"          => "Customer Satisfaction Ratings (affecting your Customer Satisfaction score)",
     "email_and_other_accounts"  => "Email and other channel accounts",
     "delete_message"            => "Delete message",
     "linked_tickets"            => "Linked Tickets",
@@ -552,5 +542,24 @@ return array(
     "enable_throttling"         => "Enable Throttling",
     "enable_throttling_api_desc" => "Limit the number of messages user's can post within a time frame. See <a href='https://docs.supportpal.com/current/App+Configuration#Throttling' target='_blank'>Throttling configuration</a> for more details on how to adjust the limits.",
     "captcha_desc"              => "When the captcha should be shown to users opening new tickets or using the track ticket feature.",
+
+    /*
+     * 5.0.0
+     */
+    "also_viewing"              => "Also viewing ticket:",
+    "mark_as_read"              => "Mark as Read",
+    "mark_as_unread"            => "Mark as Unread",
+    "sla_targets"               => "SLA Target|SLA Targets",
+    "sla_targets_desc"          => "Set target times that a ticket must be responded to by and resolved by per priority. The time will be counted only during business hours based on the schedule(s) chosen, decimal values can be used. Leave value blank to not set a target for that priority.",
+    "first_reply_time"          => "First Reply Time",
+    "next_reply_time"           => "Next Reply Time",
+    "resolution_time"           => "Resolution Time",
+    "reply_due_in"              => "Reply due :time",
+    "resolve_in"                => "Resolve :time",
+    "paused_ago"                => "Paused :time",
+    "reply_due_time"            => "Reply due time",
+    "resolution_due_time"       => "Resolution due time",
+    "set_reply_due_time"        => "Set reply due time",
+    "set_resolution_due_time"   => "Set resolution due time",
 
 );
