@@ -90,7 +90,6 @@ return array(
     "smtp_username"             => "SMTP Username",
     "smtp_password"             => "SMTP Password",
     "ssl"                       => "SSL",
-    "tls"                       => "TLS",
     "email_content"             => "Email Content",
     "email_content_desc"        => "Enter a default subject and email content for this template, you can also write the template in other languages. If a template is not set in another language, it will use the default data.",
     "outgoing"                  => "Outgoing",
@@ -630,5 +629,10 @@ return array(
     "favicon_dark_mode"         => "Dark Mode Favicon",
     "favicon_dark_mode_desc"    => "If your favicon was designed to only work on a light background, set a different favicon for dark mode. This will only be used if your browser and/or operating system is running in dark mode.",
     "template_mode_system_desc" => "Choosing system will synchronise the template mode to light or dark mode depending on your operating system theme settings.",
+
+    /*
+     * 5.0.1
+     */
+    "starttls_or_none"          => "STARTTLS / None",
 
 );
