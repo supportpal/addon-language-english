@@ -234,4 +234,9 @@ return array(
     "export_deleted"                    => "Export :old_value has been deleted from the system.",
     "user_export_generated"             => "Export :new_value of user :rel has been generated and stored on the system.",
 
+    /*
+     * 5.0.2
+     */
+    "personal_reply_templates_updated"  => "Updated their reply templates.",
+
 );
