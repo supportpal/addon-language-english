@@ -57,7 +57,6 @@ jobs:
       - name: Sync files
         run: |
           mkdir -p ${{ matrix.path }}/.github/workflows/
-          cp .github/dependabot.yml ${{ matrix.path }}/.github/
           cp .github/workflows/release.yml ${{ matrix.path }}/.github/workflows/
           cp .github/workflows/test.yml ${{ matrix.path }}/.github/workflows/
           language-tools sync Lang/en ${{ env.LANG_PATH }}
@@ -78,7 +77,7 @@ jobs:
 
       - name: Render template
         id: template
-        uses: chuhlomin/render-template@v1.7
+        uses: chuhlomin/render-template@v1.8
         with:
           template: .github/sync-template.md
           vars: |
