@@ -8,9 +8,6 @@ return array(
     "new_reply"             => "New Ticket Reply",
     "new_reply_text"        => "A new reply has been posted by :name in ticket #:item.",
 
-    "operator_login"        => "Operator Logged In",
-    "operator_login_text"   => ":name has logged in to the operator panel.",
-
     "failed_logins"         => "Failed Operator Logins",
     "new_comments"          => "New Comments",
 

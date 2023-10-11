@@ -239,4 +239,13 @@ return array(
      */
     "personal_reply_templates_updated"  => "Updated their reply templates.",
 
+    /*
+     * 5.1.0
+     */
+    "ticket_deleted_attachment"         => "Deleted attachment ':old_value' from ticket #:rel.",
+    "user_added_to_group"               => "User :rel added to user group :new_value.",
+    "user_removed_from_group"           => "User :rel removed from user group :old_value.",
+    "operator_added_to_group"           => "Operator :rel added to operator group :new_value.",
+    "operator_removed_from_group"       => "Operator :rel removed from operator group :old_value.",
+
 );

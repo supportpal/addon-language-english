@@ -635,4 +635,13 @@ return array(
      */
     "starttls_or_none"          => "STARTTLS / None",
 
+    /*
+     * 5.1.0
+     */
+    "email_attempt_at_desc"     => "The email failed to send. Retrying again :time.", // :time example, "in 5 mins"
+    "websockets_connection"     => "Web Sockets Connection",
+    "websockets_not_running"    => "Unable to connect to web socket server.",
+    "search_driver_check"       => "Search Driver",
+    "search_driver_not_working" => "The configured search driver is not working correctly.",
+
 );

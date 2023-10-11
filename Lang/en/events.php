@@ -31,4 +31,9 @@ return array(
     "update_locked"         => "Ticket locked",
     "update_unlocked"       => "Ticket unlocked",
 
+    /*
+     * 5.1.0
+     */
+    "update_message"        => "Message updated",
+
 );

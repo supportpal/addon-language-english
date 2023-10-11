@@ -494,7 +494,6 @@ return array(
      * 3.0.0
      */
     "merge_tickets_into"        => "Select ticket to merge into",
-    "search_number_or_subject"  => "Search by ticket number or subject",
     "im_not_sure"               => "I'm not sure",
     "auto_reply_detected"       => "Auto-reply detected - no notification will be sent to the user(s).",
     "cc_desc"                   => "You can CC other people on to this ticket by entering email addresses here.",

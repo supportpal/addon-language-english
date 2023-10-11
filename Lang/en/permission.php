@@ -56,7 +56,6 @@ return array(
 
     // Report
     "report"            => "View Reports",
-    "reportdashboard"   => "View Dashboard",
 
     // General
     "tag"               => "Manage Tags",
@@ -134,4 +133,8 @@ return array(
      */
     "private_messaging" => "View Private Messages",
 
+    /*
+     * 5.1.0
+     */
+    "manage_report"     => "Manage Reports",
 );

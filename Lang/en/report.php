@@ -147,4 +147,15 @@ return array(
     "users_with_most_tickets"           => "Users with the Most Tickets",
     "organisations_with_most_tickets"   => "Organisations with the Most Tickets",
 
+    /*
+     * 5.1.0
+     */
+    "ticket_messages"                   => "Ticket Messages",
+    "ticket_messages_desc"              => "A breakdown of ticket messages, notes and forwards posted in the timeframe.",
+    "messages_by_operators"             => "Messages by Operators",
+    "notes_by_operators"                => "Notes by Operators",
+    "forwards_by_operators"             => "Forwards by Operators",
+    "forwards"                          => "Forwards",
+    "messages_by_users"                 => "Messages by Users",
+
 );
