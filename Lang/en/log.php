@@ -248,4 +248,10 @@ return array(
     "operator_added_to_group"           => "Operator :rel added to operator group :new_value.",
     "operator_removed_from_group"       => "Operator :rel removed from operator group :old_value.",
 
+    /*
+     * 5.2.0
+     */
+    "background_job_deleted"            => "Deleted background job :rel.",
+    "background_job_retried"            => "Retried background job :rel.",
+
 );
