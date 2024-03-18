@@ -133,7 +133,6 @@ return array(
     "two_fa_secret"                 => "2FA Secret",
     "two_fa_secret_desc"            => "Please store this somewhere safe as you will need this to re-add the authenticator account to your phone should you lose access.",
     "display_notifications"         => "Display Notifications",
-    "display_notifications_desc"    => "The system will notify you when new tickets or replies are created, or when other operators login. You can choose between desktop notifications or in-browser notifications, or disabling it completely.",
     "desktop_notifications"         => "Desktop Notifications",
     "browser_notifications"         => "Browser Notifications",
 
@@ -372,5 +371,10 @@ return array(
     "success_join"                  => "You are now a member of the organisation :name.",
     "error_join"                    => "The invitation code could not be found, or has expired.",
     "verify_to_view_tickets"        => "Please verify all additional email addresses or remove unverified email addresses under your account profile.",
+
+    /*
+     * 5.2.3
+     */
+    "display_notifications_desc"    => "The system will notify you when new tickets or user replies are created, or when you are mentioned by another operator. You can choose between desktop notifications or in-browser notifications, or disabling it completely.",
 
 );
