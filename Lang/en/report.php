@@ -113,7 +113,7 @@ return array(
     "ticket_management"                 => "Ticket Management",
     "reopened"                          => "Reopened",
     "by_type"                           => "Tickets Opened",
-    "tickets_opened_desc"               => "A breakdown of ticket opened in the timeframe.",
+    "tickets_opened_desc"               => "A breakdown of tickets opened in the timeframe.",
     "tickets_opened_by_brand"           => "Tickets Opened by Brand",
     "tickets_opened_by_department"      => "Tickets Opened by Department",
     "tickets_opened_by_channel"         => "Tickets Opened by Channel",
@@ -157,5 +157,12 @@ return array(
     "forwards_by_operators"             => "Forwards by Operators",
     "forwards"                          => "Forwards",
     "messages_by_users"                 => "Messages by Users",
+
+    /*
+     * 5.2.0
+     */
+    "times_canned_responses_used"       => "Total Times Canned Responses Used",
+    "total_tickets_canned_responses_used" => "Total Tickets with Canned Responses Used",
+    "operators_most_used_responses"     => "Operators with Most Canned Responses Used",
 
 );

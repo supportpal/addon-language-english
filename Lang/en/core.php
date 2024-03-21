@@ -644,4 +644,21 @@ return array(
     "search_driver_check"       => "Search Driver",
     "search_driver_not_working" => "The configured search driver is not working correctly.",
 
+    /*
+     * 5.2.0
+     */
+    "temporary_path"            => "Temporary Path",
+    "temporary_path_desc"       => "The temporary path is used to store files during the update. The system temporary path is used by default. The path must have at least 3GB of free space.",
+    "background_jobs_desc"      => "Below are a list of background jobs that have failed recently.",
+    "failed_jobs"               => "Failed Jobs",
+    "horizon_dashboard"         => "Horizon Dashboard",
+    "job"                       => "Job|Jobs",
+    "job_payload"               => "Job Payload",
+    "job_exception"             => "Job Exception",
+    "failed_at"                 => "Failed At",
+    "queue"                     => "Queue",
+    "exception"                 => "Exception",
+    "data"                      => "Data",
+    "failed_background_jobs"    => "One or more <a target='_blank' href=':link'>background jobs</a> have failed and require manual attention.",
+
 );
