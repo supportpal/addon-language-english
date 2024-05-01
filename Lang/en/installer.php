@@ -199,4 +199,9 @@ return array(
     "post_install"              => "For the system to function properly, a cron job must be set-up. Please read our <a href='https://docs.supportpal.com/current/Administration'>documentation</a> for details on this and other recommend actions to improve functionality and security.",
     "help_allowed_methods"      => "Your web server must permit all of the below HTTP methods. Please check our <a href='https://docs.supportpal.com/current/System+Requirements#WebServer' target='_blank'>New Installation</a> documentation for more information.",
 
+    /*
+     * 5.3.0
+     */
+    "check_file_permissions"    => "Checking file permissions...",
+
 );

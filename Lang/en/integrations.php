@@ -49,7 +49,11 @@ return array(
     "twilio_verify_sid"                => "Verification SID",
 
     "twitter_api_key_secret"           => "API Key Secret",
-    "twitter_documentation"            => "Please read over our documentation for setting up <a href=':link'>Twitter</a>.",
-    "twitter_redirect_url"             => "The following URL <strong>must</strong> be entered for the Twitter App 'Callback URL':",
+
+    /*
+     * 5.3.0
+     */
+    "twitter_documentation"            => "Please read over our documentation for setting up <a href=':link'>X</a>.",
+    "twitter_redirect_url"             => "The following URL <strong>must</strong> be entered for the X App 'Callback URL':",
 
 );

@@ -173,7 +173,6 @@ return array(
     "schedule_task_cron"        => "Cron Job",
     "schedule_task_3"           => "Create a cron job similar to the example provided below on your server for the scheduled tasks to run automatically.",
     "ticket_channel_desc"       => "Ticket Channels are methods for creating tickets. They can be easily extended to include your own channels, for example tickets opened via Instagram.",
-    "ticket_channel_2"          => "We provide a number of default channels. You may wish to activate and configure the Facebook and Twitter channels to collect tickets generated via social media.",
     "user_desc"                 => "Users who interact with your system are displayed here. You can add, edit, and delete users as appropriate.",
     "organisation_desc"         => "Users can be assigned to organisations enabling them access to tickets opened by other users within their organisation.",
     "operator_desc"             => "Other members of staff can be added as operators here, along with managing which departments they are assigned to.",
@@ -660,5 +659,11 @@ return array(
     "exception"                 => "Exception",
     "data"                      => "Data",
     "failed_background_jobs"    => "One or more <a target='_blank' href=':link'>background jobs</a> have failed and require manual attention.",
+
+    /*
+     * 5.3.0
+     */
+    "ticket_channel_2"          => "We provide a number of default channels, additional channels and other add-ons can be installed from the Add-ons Marketplace.",
+    "incoming_duplicate"        => "Incoming (Duplicate)",
 
 );
