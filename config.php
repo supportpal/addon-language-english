@@ -30,6 +30,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Language Text Direction (optional)
+    |--------------------------------------------------------------------------
+    |
+    | The text direction of your language pack for the template, either 'ltr'
+    | (left-to-right) or 'rtl' (right-to-left). Defaults to 'ltr'.
+    |
+    */
+
+    'text_direction' => 'ltr',
+
+    /*
+    |--------------------------------------------------------------------------
     | Language URI (optional)
     |--------------------------------------------------------------------------
     |

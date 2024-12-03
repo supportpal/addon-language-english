@@ -62,4 +62,13 @@ return array(
     "twilio_verify_countries"          => "Verify Allowed Countries",
     "twilio_verify_countries_desc"     => "Restrict phone number verification to specific countries, to reduce costs and the risk of abuse. Phone numbers belonging to countries outside of the permitted list can be manually marked as verified by staff.",
 
+    /*
+     * 5.5.0
+     */
+    "algolia_frontend_search_rate_limit" => "Frontend Search Rate Limiting",
+    "algolia_max_daily"                => "Daily Max Requests",
+    "algolia_max_daily_desc"           => "The maximum number of API calls that can be made to Algolia from the frontend.",
+    "algolia_max_min"                  => "Max Requests Per Minute",
+    "algolia_max_min_desc"             => "The maximum number of API calls that can be made to Algolia from the frontend, per authenticated user / IP address.",
+
 );
