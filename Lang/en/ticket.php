@@ -588,4 +588,11 @@ return array(
     "pin"                       => "Pin",
     "unpin"                     => "Unpin",
 
+    /*
+     * 5.6.0
+     */
+    "copy_to_new_filter"        => "Copy to New Filter",
+    "alias_support"             => "Alias Support",
+    "alias_support_desc"        => "Alias support analyses the recipient addresses of incoming emails to determine which department the email should be opened in. Disabling alias support will open all emails in the department they were fetched in irrespective of the recipient addresses.",
+
 );

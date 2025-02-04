@@ -369,7 +369,6 @@ return array(
     "multi_ip"                  => "Multi-IP Support",
     "multi_ip_desc"             => "Allows locking SupportPal to more than one internal/external IP.",
     "purchase"                  => "Purchase",
-    "ticket_number_missing"     => "For ticket related emails, the {{ ticket.number }} merge field should be present in the email subject and must be wrapped in either <em>[#{{ ticket.number }}]</em> or <em>(#{{ ticket.number }})</em> in order to route replies to the correct ticket. If you would like to remove the ticket number, please consider enabling <a href='https://docs.supportpal.com/current/Email+Channels#SubAddressConfiguration' target='_blank'>email sub-addressing</a>.",
 
     /*
      * 2.5.0
@@ -741,5 +740,12 @@ return array(
     "bottom"                    => "Bottom",
     "anchor"                    => "Anchor",
     "example"                   => "Example",
+
+    /*
+     * 5.6.0
+     */
+    "email_template_enabled_desc" => "Disabling the email template will prevent notifications that use this template from being sent.",
+    "template_disabled"         => "Template Disabled",
+    "reset_email_template"      => "This will update the editor with the default email template content. Any previous changes made will be lost once the email template has been saved.",
 
 );
