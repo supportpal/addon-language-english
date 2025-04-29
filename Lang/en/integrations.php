@@ -71,4 +71,10 @@ return array(
     "algolia_max_min"                  => "Max Requests Per Minute",
     "algolia_max_min_desc"             => "The maximum number of API calls that can be made to Algolia from the frontend, per authenticated user / IP address.",
 
+    /*
+     * 5.7.0
+     */
+    "microsoft_tenant_id"               => "Tenant ID",
+    "microsoft_tenant_id_desc"          => "If you are required to use a single tenant for supported account types, enter the tenant ID; otherwise, leave this field blank. The tenant ID can be found in the Microsoft Entra Identity overview.",
+
 );

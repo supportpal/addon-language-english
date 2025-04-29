@@ -434,4 +434,10 @@ return array(
      */
     "mark_as_done"              => "Mark as Done",
 
+    /*
+     * 5.7.0
+     */
+    "bot"                       => "Bot|Bots",
+    "allow_all"                 => "Allow All",
+
 );
