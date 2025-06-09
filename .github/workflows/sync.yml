@@ -93,10 +93,14 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions@users.noreply.github.com'
           git checkout -b $BRANCH
-          git commit -m "🔄 Sync https://github.com/${{ github.repository }}"
-          git push --set-upstream origin $BRANCH --force
-          if [ -z "$(gh pr list -S "head:$BRANCH")" ]; then
-            gh pr create --base master --title "🔄 Sync ${{ github.repository }}" --body "${{ steps.template.outputs.result }}"
+          if [ "$(git log --format='%H' master..HEAD | wc -l)" -gt 1 ]; then
+            gh pr comment "$BRANCH" --edit-last --body "⚠️ The PR has been edited. Upstream changes will not be synchronised, in order to prevent overwriting new commits. Close the PR to start again." 
+          else
+            git commit -m "🔄 Sync https://github.com/${{ github.repository }}"
+            git push --set-upstream origin $BRANCH --force
+            if [ -z "$(gh pr list -H "$BRANCH")" ]; then
+              gh pr create --base master --title "🔄 Sync ${{ github.repository }}" --body "${{ steps.template.outputs.result }}"
+            fi
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
