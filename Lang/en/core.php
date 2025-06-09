@@ -756,4 +756,10 @@ return array(
     "private_message_notification" => "New Operator Private Message",
     "private_message_notification_desc" => "Notifies you when you receive correspondence from another operator via private message.",
 
+    /*
+     * 5.7.3
+     */
+    "solid"                     => "Solid",
+    "dashed"                    => "Dashed",
+    "dotted"                    => "Dotted",
 );
