@@ -83,7 +83,7 @@ jobs:
           vars: |
             GITHUB_RUN_ID: ${{ github.run_id }}
             REPO_NAME: ${{ github.repository }}
-            REPO_URL: ${{ github.repositoryUrl }}
+            REPO_URL: ${{ github.server_url }}/${{ github.repository }}
 
       - name: Create pull request
         if: steps.changes.outputs.changes == '1'
