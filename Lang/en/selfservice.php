@@ -33,7 +33,6 @@ return array(
     "excerpt"                   => "Excerpt",
     "associate_tag"             => "Associate article with a tag...",
     "associate_category"        => "Associate article with a category...",
-    "published_desc"            => "If the article can be viewed publicly. If it is not published, it can still be viewed by direct URL provided one of the categories is public.",
     "registered_users_desc"     => "Toggle to show article only to logged in users.",
 
     "comment_by"                => "Comment By",
@@ -163,5 +162,11 @@ return array(
      */
     "comment_notification"      => "New Comment Posted",
     "comment_notification_desc" => "Notifies you when a new comment is posted on a self-service article.",
+
+    /*
+     * 5.7.5
+     */
+    "published_desc"            => "Controls whether the article can be viewed publicly. When published with no public categories, it can only be viewed by direct URL. When unpublished, it can only be viewed by authenticated operators on the frontend.",
+    "not_published"             => "Not Published",
 
 );
