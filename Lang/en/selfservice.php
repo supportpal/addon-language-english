@@ -149,7 +149,6 @@ return array(
      */
     "type_protected_desc"       => "Toggle to only show content in this type to logged in users.",
     "article_feedback"          => "Article Feedback",
-    "frontend_icon_desc"        => "Select a <a href='https://fontawesome.com/icons' target='_blank'>FontAwesome</a> regular icon to display on the frontend for your type, you can also search for a custom icon not included in the list (starting with 'fa-').",
     "comment_deleted"           => "Comment deleted",
 
     /*
@@ -168,5 +167,13 @@ return array(
      */
     "published_desc"            => "Controls whether the article can be viewed publicly. When published with no public categories, it can only be viewed by direct URL. When unpublished, it can only be viewed by authenticated operators on the frontend.",
     "not_published"             => "Not Published",
+
+    /*
+     * 6.0.0
+     */
+    "frontend_icon_desc"        => "Select an icon to display on the frontend for your type, you can also search for a custom icon not included in the default list.",
+    "icon_book"                 => "Book",
+    "icon_download"             => "Download",
+    "icon_newspaper"            => "Newspaper",
 
 );

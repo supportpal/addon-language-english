@@ -131,7 +131,6 @@ return array(
     "feedback_expired"          => "The ticket has been resolved for a while, and it can unfortunately no longer be rated.",
     "feedback_questions"        => "If you could spare a few moments, please answer the following questions to help us further improve the support that we offer.",
     "feedback_for_ticket"       => "Feedback for Ticket #:number",
-    "feedback_rating_desc"      => "The support received on this ticket has been rated as <strong>:rating</strong> by the user.",
 
     // Custom fields
     "customfield"               => "Ticket Custom Field|Ticket Custom Fields",
@@ -158,7 +157,6 @@ return array(
     "allowed_files"             => "Allowed Attachment File Types",
 
     // Drafts
-    "draft_saved"               => "Draft saved at :time",
     "save_draft"                => "Save Draft",
     "discard_draft"             => "Discard Draft",
 
@@ -202,7 +200,6 @@ return array(
     "reply_options"             => "Reply Options",
     "send_email_to_users"       => "Send Email To User(s)",
     "send_email_to_operators"   => "Send Email To Operator(s)",
-    "back_to_grid"              => "Go Back to Ticket Grid",
     "take"                      => "Take",
     "take_ownership"            => "Take Ownership",
     "pause_duetime"             => "Pause Due Time",
@@ -305,14 +302,11 @@ return array(
     "default_reply_options_desc" => "Select the default reply options to be set when opening or replying to a ticket. The ':reply_option' option will be ticked based on the ':department_option' department setting.",
     "associate_response_tag"    => "Associate canned response with a tag...",
     "canned_response_tags_desc" => "Add tags which may help finding a canned response when replying to a ticket.",
-    "append_ip_address"         => "Append IP Address",
-    "append_ip_address_desc"    => "Append the IP address of users to their messages when they are opening and replying to tickets from the frontend.",
     "unassign_operator"         => "Unassign Operator",
     "remove_tag"                => "Remove Tag",
     "message_clipped"           => "[Message Clipped]",
     "view_entire_message"       => "View entire message",
     "no_custom_fields"          => "No custom fields found. Click <a href=':route'>here</a> to create one.",
-    "follow_up_active"          => "A <a class='view-followup' style='text-decoration: underline;'>follow up</a> is currently active on this ticket and will run <strong>:time</strong>.",
     "disable_user_email_replies" => "Disable User Email Replies",
 
     /*
@@ -478,7 +472,6 @@ return array(
      * 2.6.0
      */
     "follow_ups"                => "Follow Ups",
-    "follow_up_multiple_active" => "Multiple <a class='view-followup' style='text-decoration: underline;'>follow ups</a> are currently active on this ticket and the next scheduled will run <strong>:time</strong>.",
     "follow_up_no_actions"      => "The follow up has no actions set, please confirm if you'd like to continue.",
     "status_after_running"      => "Status After Running",
     "older_messages"            => ":count older messages",
@@ -492,11 +485,6 @@ return array(
     "im_not_sure"               => "I'm not sure",
     "auto_reply_detected"       => "Auto-reply detected - no notification will be sent to the user(s).",
     "cc_desc"                   => "You can CC other people on to this ticket by entering email addresses here.",
-
-    /*
-     * 3.2.0
-     */
-    "drafting_message"          => "<strong>:name</strong> was drafting a message",
 
     /*
      * 3.3.0
@@ -530,7 +518,6 @@ return array(
      * 4.1.0
      */
     "ticket_format_desc"        => "Can contain alphanumeric characters and special characters <code>-_.+!*,</code><br />The following variables may also be used: %S for a sequential number | %N for a random number | %L for a random letter<br />Use {number} to repeat <strong>only</strong> after %N or %L, e.g. %N{4} equates to 4 random numbers, %L{3} equates to 3 random letters<br />The following <a href='http://php.net/manual/en/function.date.php' target='_blank'>PHP Date</a> Parameters prefixed with % Y,y,m,d,z,j,g,G,h,H,i,s",
-    "append_ip_address_api_desc" => "Append the user's IP address to the end of their ticket messages (requires user_ip_address data to be provided).",
     "check_spam"                => "Check Spam Rules",
     "check_spam_api_desc"       => "Block messages which match spam rules.",
     "captcha_desc"              => "When the captcha should be shown to users opening new tickets or using the track ticket feature.",
@@ -571,9 +558,7 @@ return array(
      */
     "rate_limiting"             => "Rate Limiting",
     "max_requests"              => "Max Requests",
-    "max_requests_desc"         => "Set the maximum number of requests before a user is throttled.",
     "decay_time"                => "Decay Time",
-    "decay_time_desc"           => "The number of minutes until the available attempts are reset.",
     "exclude_addresses"         => "Exclude Addresses",
     "exclude_addresses_desc"    => "A list of email addresses which are excluded from rate limits.",
     "enable_throttling"         => "Enable Rate Limiting",
@@ -613,5 +598,33 @@ return array(
     "mention_notification_desc" => "Notifies you when you are mentioned on a ticket.",
     "mark_resolved_and_post_reply" => "Mark as Resolved & Post Reply",
     "allowed_files_desc"        => "Enable to allow all file types, or disable and specify a list of file extensions. The list must be delimited by the pipe | character, for example: txt|png|jpg.",
+
+    /*
+     * 6.0.0
+     */
+    "back_to_grid"              => "Go Back to Grid",
+    "stay_on_ticket"            => "Stay on Ticket",
+    "draft_saved"               => "Saved :time",
+    "drafting_message"          => ":name was drafting a message :time",
+    "feedback_notification"     => "Feedback Posted",
+    "feedback_notification_desc" => "Notifies you when feedback is posted on a ticket.",
+    "notify_feedback"           => "Feedback Notifications",
+    "notify_feedback_desc"      => "Specify which feedback responses from this form should trigger notifications to operators.",
+    "notify_all_feedback"       => "Notify on all feedback",
+    "notify_neutral_bad_feedback" => "Notify on neutral & bad feedback only",
+    "notify_bad_feedback"       => "Notify on bad feedback only",
+    "timeline"                  => "Timeline",
+    "filter_timeline"           => "Filter Timeline",
+    "timeline_replies"          => "Replies",
+    "timeline_forwards"         => "Forwards",
+    "timeline_customfields"     => "Custom field changes",
+    "timeline_sla"              => "SLA & due time changes",
+    "timeline_messages"         => "Message & note changes",
+    "timeline_userinfo"         => "User information & changes",
+    "timeline_assignment"       => "Assignment changes",
+    "timeline_state"            => "State changes",
+    "timeline_merging"          => "Merging, linking & splitting",
+    "max_requests_desc"         => "Set the maximum number of tokens available before a user is rate limited. Rate limiting works on a token system: creating a new ticket costs 3 tokens and replying to an existing ticket costs 1 token. The total number of tokens available resets after the decay time period.",
+    "decay_time_desc"           => "The number of minutes until the available tokens are reset.",
 
 );

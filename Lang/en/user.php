@@ -76,7 +76,6 @@ return array(
 
     "ldap_account"                  => "LDAP Account|LDAP Accounts",
     "ldap_operator_desc"            => "Search for an existing operator, or create a new one.",
-    "ldap_server"                   => "LDAP Server",
     "ldap_server_desc"              => "The server hostname. Alternatively, you can specify the full LDAP URI. For example: ldaps://ldap.server:1234/ will connect via SSL to the port 1234.",
     "ldap_username"                 => "LDAP Username",
     "ldap_username_desc"            => "The username that the operator will use to login to the helpdesk (their LDAP username.)",
@@ -409,4 +408,13 @@ return array(
     "notifications_desc"            => "Select the channels on which you would like to be notified about system events, or disable individual notifications completely.",
     "in_app_notifications"          => "In-App Notifications",
 
+    /*
+     * 6.0.0
+     */
+    "ldap_start_tls_desc"           => "Whether to connect insecurely and upgrade the connection using StartTLS. If you're using the LDAPS protocol, this option should not be used.",
+    "ldap_ca_cert"                  => "CA Certificate",
+    "ldap_ca_cert_desc"             => "Optionally upload the LDAP server's CA certificate file. This is only necessary when using self-signed certificates.",
+    "ldap_server"                   => "LDAP Server|LDAP Servers",
+    "ldap_server_hostname"          => "Hostname",
+    "ldap_server_name_desc"         => "A friendly name to identify this LDAP server.",
 );
