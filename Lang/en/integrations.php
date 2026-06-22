@@ -58,7 +58,7 @@ return array(
      * 5.4.1
      */
     "twilio_verify_sid"                => "Verify SID",
-    "twilio_number_verification_desc"  => "Optional - Enter a verification service SID to enable verification of user phone numbers. This allows user to verify their own entered phone numbers - the <a target='_blank' href='https://www.twilio.com/verify'>Verify</a> service by Twilio is chargeable.",
+    "twilio_number_verification_desc"  => "Optional - Enter a verification service SID to enable verification of user phone numbers. This allows user to verify their own entered phone numbers - the <a target='_blank' href='https://www.twilio.com/verify'>Verify service</a> by Twilio is chargeable.",
     "twilio_verify_countries"          => "Verify Allowed Countries",
     "twilio_verify_countries_desc"     => "Restrict phone number verification to specific countries, to reduce costs and the risk of abuse. Phone numbers belonging to countries outside of the permitted list can be manually marked as verified by staff.",
 

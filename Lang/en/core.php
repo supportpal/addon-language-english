@@ -552,7 +552,7 @@ return array(
     "addon_cancel_info"         => "Cancelling will immediately deactivate the add-on and stop any further payments being taken.",
     "system_health"             => "System Health",
     "system_health_desc"        => "Health checks monitor that the system is performing correctly and notify you when issues arise.",
-    "system_health_errors"      => "One or more <a href=':link'>system health</a> checks are failing.",
+    "system_health_errors"      => "One or more <a href=':link'>system health checks</a> are failing.",
     "app_log_check"             => "Application Log Error Count",
     "app_log_errors_exist"      => "Application log file for today contains errors, please check the logs by navigating to Utilities -> Logs -> Log File Manager -> :filename",
     "redis_check"               => "Redis Connection",

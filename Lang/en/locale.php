@@ -343,7 +343,7 @@ return array(
         "Asia/Bangkok"                      => "(GMT+07:00) Bangkok",
         "Asia/Jakarta"                      => "(GMT+07:00) Jakarta",
         "Asia/Krasnoyarsk"                  => "(GMT+07:00) Krasnoyarsk",
-        "Asia/Brunei"                       => "(GMT+08:00) Beijing",
+        "Asia/Brunei"                       => "(GMT+08:00) Brunei",
         "Asia/Shanghai"                     => "(GMT+08:00) Chongqing, Shanghai",
         "Asia/Hong_Kong"                    => "(GMT+08:00) Hong Kong",
         "Asia/Irkutsk"                      => "(GMT+08:00) Irkutsk",
