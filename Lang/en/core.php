@@ -209,7 +209,6 @@ return array(
     "time_format"               => "Time Format",
     "time_format_desc"          => "The time format that is used globally.",
     "simpleauth_key"            => "SimpleAuth Key",
-    "simpleauth_key_desc"       => "The key for our single sign on option, minimum 16 characters.",
     "simpleauth_operators"      => "Allow for Operators",
     "base_url"                  => "System URL",
     "base_url_desc"             => "Enter the full web address of your installation, used to generate the URLs that are sent to users.",
@@ -827,5 +826,10 @@ return array(
     "debug_mode_desc"           => "Enable enhanced debug logging. When enabled, additional diagnostic information is written to the log files, which can be downloaded via Utilities -> Logs -> Log File Manager.",
     "debug_mode_warning"        => "Debug mode should only be enabled temporarily to avoid generating large log files.",
     "debug_mode_error"          => "App debug should not be enabled in production and will display errors to users, set APP_DEBUG to false. Use the debug mode option in the general settings instead.",
+
+    /*
+     * 6.0.2
+     */
+    "simpleauth_key_desc"       => "The key for our single sign on option, minimum 32 characters.",
 
 );
