@@ -33,7 +33,6 @@ return array(
     "excerpt"                   => "Excerpt",
     "associate_tag"             => "Associate article with a tag...",
     "associate_category"        => "Associate article with a category...",
-    "published_desc"            => "If the article can be viewed publicly. If it is not published, it can still be viewed by direct URL provided one of the categories is public.",
     "registered_users_desc"     => "Toggle to show article only to logged in users.",
 
     "comment_by"                => "Comment By",
@@ -150,7 +149,6 @@ return array(
      */
     "type_protected_desc"       => "Toggle to only show content in this type to logged in users.",
     "article_feedback"          => "Article Feedback",
-    "frontend_icon_desc"        => "Select a <a href='https://fontawesome.com/icons' target='_blank'>FontAwesome</a> regular icon to display on the frontend for your type, you can also search for a custom icon not included in the list (starting with 'fa-').",
     "comment_deleted"           => "Comment deleted",
 
     /*
@@ -163,5 +161,19 @@ return array(
      */
     "comment_notification"      => "New Comment Posted",
     "comment_notification_desc" => "Notifies you when a new comment is posted on a self-service article.",
+
+    /*
+     * 5.7.5
+     */
+    "published_desc"            => "Controls whether the article can be viewed publicly. When published with no public categories, it can only be viewed by direct URL. When unpublished, it can only be viewed by authenticated operators on the frontend.",
+    "not_published"             => "Not Published",
+
+    /*
+     * 6.0.0
+     */
+    "frontend_icon_desc"        => "Select an icon to display on the frontend for your type, you can also search for a custom icon not included in the default list.",
+    "icon_book"                 => "Book",
+    "icon_download"             => "Download",
+    "icon_newspaper"            => "Newspaper",
 
 );
