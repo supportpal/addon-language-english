@@ -32,10 +32,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Checkout repository we want to synchronise
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: ${{ matrix.repo }}
           path: ${{ matrix.path }}
