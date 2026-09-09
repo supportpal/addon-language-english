@@ -244,7 +244,7 @@ return array(
 
     "timezones" => array(
         "Pacific/Midway"                    => "(GMT-11:00) Midway Island",
-        "Pacific/Pago_Pago"                 => "(GMT-11:00) Samoa",
+        "Pacific/Pago_Pago"                 => "(GMT-11:00) American Samoa",
         "Pacific/Honolulu"                  => "(GMT-10:00) Hawaii",
         "America/Anchorage"                 => "(GMT-09:00) Alaska",
         "America/Los_Angeles"               => "(GMT-08:00) Pacific Time (US & Canada)",

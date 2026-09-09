@@ -830,6 +830,18 @@ return array(
     /*
      * 6.0.2
      */
-    "simpleauth_key_desc"       => "The key for our single sign on option, minimum 32 characters.",
+    "simpleauth_key_desc"       => "The key for our single sign on option.",
+
+    /*
+     * 6.1.0
+     */
+    "update_and_activate"       => "Update & Activate",
+    "purge_in_background"       => "The records will be purged in the background. This may take some time...",
+    "shortcut_minimise_form"    => "Minimise the active message form",
+    "token_generate_after_create" => "The token will be generated when the API token is saved.",
+    "change_token"              => "Changing the token will break any integrations using the previous token.",
+    "simpleauth_key_generate"   => "Generate Key",
+    "change_simpleauth_key"     => "Changing the key will break any single sign on integrations using the previous key.",
+    "view_matched_rule"         => "View matched rule",
 
 );

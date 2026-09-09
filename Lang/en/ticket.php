@@ -261,7 +261,6 @@ return array(
     "no_departments_found"      => "No departments found. Click <a href=':route'>here</a> to create one.",
     "no_operators_found"        => "No operators found. Click <a href=':route'>here</a> to create one.",
     "change_priority"           => "Change Priority",
-    "add_tag"                   => "Add tag",
 
     "unlock"                    => "Unlock",
     "merged"                    => "Merged",
@@ -276,7 +275,6 @@ return array(
 
     "pause_duetime_desc"        => "If there is an active SLA plan on this ticket, pause the remaining due time until after the follow up date. The due time will only start again once a reply or note has been added to the ticket (including from the follow up).",
 
-    "add_cc"                    => "Add CC",
     "reply_above_line"          => "Please reply above this line",
 
     "email_settings"            => "Email Settings",
@@ -303,7 +301,6 @@ return array(
     "associate_response_tag"    => "Associate canned response with a tag...",
     "canned_response_tags_desc" => "Add tags which may help finding a canned response when replying to a ticket.",
     "unassign_operator"         => "Unassign Operator",
-    "remove_tag"                => "Remove Tag",
     "message_clipped"           => "[Message Clipped]",
     "view_entire_message"       => "View entire message",
     "no_custom_fields"          => "No custom fields found. Click <a href=':route'>here</a> to create one.",
@@ -412,7 +409,6 @@ return array(
     "forwarded_to"              => "Forwarded to",
     "new_operator_reply"        => "New Operator Reply",
     "new_user_reply"            => "New User Reply",
-    "add_bcc"                   => "Add BCC",
     "at_least_one_recipient"    => "Please specify at least one recipient.",
     "forwarded_message"         => "---------- Forwarded message ----------",
 
@@ -626,5 +622,10 @@ return array(
     "timeline_merging"          => "Merging, linking & splitting",
     "max_requests_desc"         => "Set the maximum number of tokens available before a user is rate limited. Rate limiting works on a token system: creating a new ticket costs 3 tokens and replying to an existing ticket costs 1 token. The total number of tokens available resets after the decay time period.",
     "decay_time_desc"           => "The number of minutes until the available tokens are reset.",
+
+    /*
+     * 6.1.0
+     */
+    "change_user"               => "Change User",
 
 );

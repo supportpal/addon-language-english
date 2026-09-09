@@ -363,4 +363,9 @@ return array(
     "ticket_attachment_rejected"        => "Attachment(s) :files blocked from ticket #:rel due to invalid file type.",
     "timeline_ticket_attachment_rejected" => "Attachment(s) :files blocked due to invalid file type",
 
+    /*
+     * 6.1.0
+     */
+    "system_update_started"             => "Started system update to version :rel.",
+
 );
