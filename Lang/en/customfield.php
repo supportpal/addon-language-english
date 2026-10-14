@@ -58,9 +58,4 @@ return array(
      * 2.3.1
      */
     "required_desc"             => "If the custom field must be filled out. For the checkbox, checklist or multiple options types, it will require the user to select at least one option.",
-
-    /*
-     * 3.3.0
-     */
-    "encrypted_value"           => "** ENCRYPTED **",
 );
